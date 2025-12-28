@@ -2,7 +2,7 @@
  Project Overview
 This repository contains a sophisticated C++ Manual Map Injector specifically engineered to interface with ProjectNow-Win64-Shipping.exe (Darkest Days), a title utilizing Unreal Engine 4.27. In modern game security, standard injection techniques—such as LoadLibrary—are easily intercepted by kernel-level anti-cheats (like EAC or XIGNCODE3). These protections often result in "Access Denied" errors or the "kernel32.dll not found" exception seen in standard tools. This project overcomes these limitations by implementing a custom memory mapping logic that bypasses the Windows Loader entirely.
 
-🛠️ Technical Problem & Solution
+ Technical Problem & Solution
 Standard injectors rely on the target process to load the DLL. However, protected games hook system APIs to hide critical modules like kernel32.dll or ntdll.dll from external tools.
 
 This injector utilizes Manual Mapping, which performs the following steps internally:
